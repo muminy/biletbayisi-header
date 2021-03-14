@@ -9,15 +9,16 @@
       <div class="container-fluid py-0">
         <b-container>
           <button
+            @click="handleMenu"
             class="navbar-toggler d-lg-none px-0 d-md-none"
             type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
           >
-            <menu-icon :size="24" />
+            <span v-if="!isActiveMenu" class="material-icons menuIcon">
+              view_headline
+            </span>
+            <span v-if="isActiveMenu" class="material-icons menuIcon">
+              close
+            </span>
           </button>
           <b-navbar-brand class="mr-3" href="#">
             <b-img
@@ -49,12 +50,21 @@
 
 <script>
 import PhoneIcon from '../icons/PhoneIcon.vue';
-import MenuIcon from '../icons/MenuIcon.vue';
 import NavbarMenu from './NavbarMenu.vue';
 
 export default {
-  components: {NavbarMenu, PhoneIcon, MenuIcon},
+  components: {NavbarMenu, PhoneIcon},
   name: 'Header',
+  data: function() {
+    return {
+      isActiveMenu: false,
+    };
+  },
+  methods: {
+    handleMenu: function() {
+      this.isActiveMenu = !this.isActiveMenu;
+    },
+  },
 };
 </script>
 
@@ -91,7 +101,9 @@ export default {
 .navbar {
   padding: 0px !important;
 }
-
+.navbar-toggler {
+  margin-bottom: -3px !important;
+}
 .phone-icon {
   display: flex;
   flex-direction: row;
@@ -127,5 +139,9 @@ export default {
     border-bottom: 1.3px solid #dddddd;
     background-color: #fff;
   }
+}
+
+.menuIcon {
+  color: #000;
 }
 </style>
