@@ -77,7 +77,7 @@ export default {
   name: 'NavbarMenu',
   mounted() {
     this.$nextTick(() => {
-      $('.navbar-toggler').on('click', function() {
+      $('.menu-btn').on('click', function() {
         console.log(1);
         $('.custom-menu').animate({width: 'toggle'}, 100);
       });
@@ -145,7 +145,6 @@ ul.nav {
 
 .menu-list {
   position: relative;
-  padding-top: 5px;
 }
 
 .custom-menu {

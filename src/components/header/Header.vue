@@ -10,7 +10,7 @@
         <b-container>
           <button
             @click="handleMenu"
-            class="navbar-toggler d-lg-none px-0 d-md-none"
+            class="d-lg-none menu-btn px-0 d-md-none"
             type="button"
           >
             <span v-if="!isActiveMenu" class="material-icons menuIcon">
@@ -69,8 +69,17 @@ export default {
 </script>
 
 <style lang="less">
-.header {
+.header-fluid {
   background-color: #f8f9fa;
+  .menu-btn {
+    background-color: transparent;
+    border-width: 0px;
+    padding-top: 5px;
+    border-radius: 1px;
+    &:focus {
+      outline: 5px auto -webkit-focus-ring-color;
+    }
+  }
 }
 .separate {
   height: 40px;
@@ -116,13 +125,6 @@ export default {
   padding: 2px 0 0 2px;
   align-items: center;
   justify-content: center;
-}
-
-.navbar-toggler {
-  padding: 0.25rem 0.75rem !important;
-  border: 1px solid transparent !important;
-  border-radius: 0.25rem;
-  margin-top: -2.3px;
 }
 
 @media (max-width: 767px) {
