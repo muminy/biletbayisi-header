@@ -132,8 +132,7 @@ export default {
     box-shadow: 0 1px 20px 0 hsla(0, 0%, 39.2%, 0.75) !important;
     position: fixed;
     margin-top: -5px;
-    max-height: 53px !important;
-    min-height: 53px !important;
+    height: 53px;
     overflow: hidden;
     right: 0;
     left: 0;
