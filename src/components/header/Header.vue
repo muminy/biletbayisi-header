@@ -80,6 +80,14 @@ export default {
       outline: 5px auto -webkit-focus-ring-color;
     }
   }
+
+  .service-number {
+    color: #696969;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.03rem;
+    text-decoration: none;
+  }
 }
 .separate {
   height: 40px;
@@ -101,12 +109,7 @@ export default {
   font-size: 0.75rem;
   padding-top: 3px;
 }
-.service-number {
-  color: #696969;
-  font-size: 1.5rem;
-  font-weight: 700;
-  letter-spacing: 0.03rem;
-}
+
 .navbar {
   padding: 0px !important;
 }
