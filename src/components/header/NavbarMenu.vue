@@ -99,13 +99,13 @@ export default {
 
 .icon[data-icon-type='flight_takeoff']::before {
   font-family: 'Material Icons';
-  content: '\e539';
+  content: '\e905';
   font-size: 24px;
 }
 
 .icon[data-icon-type='flight']::before {
   font-family: 'Material Icons';
-  content: '\e905';
+  content: '\e539';
   font-size: 24px;
 }
 
@@ -179,7 +179,10 @@ ul.nav {
     overflow-y: auto;
     display: none;
     padding-bottom: 56px;
-
+    .container-fluid {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
     .navbar-text {
       padding: 0px;
       display: flex;
@@ -197,10 +200,11 @@ ul.nav {
       padding-top: 1rem;
       padding-bottom: 1rem;
     }
-  }
-
-  .responsive-menu {
-    display: block !important;
+    .responsive-menu {
+      display: block;
+      padding: 0.5rem 1rem;
+      padding-top: 5px;
+    }
   }
 
   .nav-link {
@@ -216,6 +220,11 @@ ul.nav {
   }
   .icons {
     display: block;
+  }
+
+  .container {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
   }
 }
 </style>

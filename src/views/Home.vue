@@ -141,4 +141,11 @@ a {
     padding: 0px 4px;
   }
 }
+
+@media (max-width: 767px) {
+  .header-fluid.container-fluid {
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+  }
+}
 </style>

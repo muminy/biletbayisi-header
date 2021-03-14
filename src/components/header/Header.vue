@@ -6,7 +6,7 @@
       class="px-0 headerborder"
       variant="light"
     >
-      <div class="container-fluid py-0">
+      <div class="container-fluid py-0 header-fluid">
         <b-container>
           <button
             @click="handleMenu"
