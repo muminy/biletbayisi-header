@@ -189,6 +189,7 @@ export default {
       }
 
       this.yetiskin = parseValue;
+      store.commit('setForm', {...store.state.form, yetiskin: parseValue});
     },
     cocuk: function(value, prevValue) {
       const parseValue = parseInt(value);
@@ -206,6 +207,7 @@ export default {
       }
 
       this.cocuk = parseValue;
+      store.commit('setForm', {...store.state.form, cocuk: parseValue});
     },
     bebek: function(value, prevValue) {
       const parseValue = parseInt(value);
@@ -218,6 +220,7 @@ export default {
       }
 
       this.bebek = parseValue;
+      store.commit('setForm', {...store.state.form, bebek: parseValue});
     },
     ogrenci: function(value, prevValue) {
       const parseValue = parseInt(value);
@@ -236,6 +239,7 @@ export default {
       }
 
       this.ogrenci = parseValue;
+      store.commit('setForm', {...store.state.form, ogrenci: parseValue});
     },
     type: function(value) {
       this.$nextTick(() => {
@@ -246,14 +250,11 @@ export default {
               dateFormat: 'dd MM yy DD',
               minDate: store.state.selectedDate,
               numberOfMonths: 2,
-              onSelect: function() {
-                var currentDate = $(this).datepicker('getDate');
-                console.log(currentDate);
-              },
             })
             .datepicker('setDate', store.state.toDate);
         }
       });
+      store.commit('setForm', {...store.state.form, type: value});
     },
   },
   mounted() {

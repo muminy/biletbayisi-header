@@ -4,11 +4,7 @@
       <div class="header">
         {{ label }}
       </div>
-      <select
-        @change="handleSelect(selectItem)"
-        v-model="selectItem"
-        :id="label"
-      >
+      <select @change="handleSelect(value)" v-model="value" :id="label">
         <option
           v-bind:value="item"
           v-bind:key="index"
