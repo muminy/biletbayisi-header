@@ -1,69 +1,71 @@
 <template>
   <div class="custom-menu">
-    <b-container>
-      <div class="d-block d-lg-flex d-md-flex aling-items-center menu-list">
-        <b-nav class="responsive-menu">
-          <b-nav-text>
-            <span data-icon-type="flight" class="icon"></span>
-            <b-link>
-              <span>Uçak Bileti</span>
-              <right-icon />
-            </b-link>
-          </b-nav-text>
-          <b-nav-text>
-            <span data-icon-type="flight_takeoff" class="icon"></span>
-            <b-link>
-              <span>Yurtiçi</span>
-              <right-icon />
-            </b-link>
-          </b-nav-text>
-          <b-nav-text>
-            <span data-icon-type="language" class="icon"></span>
-            <b-link>
-              <span>Yurtdışı</span>
-              <right-icon />
-            </b-link>
-          </b-nav-text>
-          <b-nav-text>
-            <span data-icon-type="check" class="icon"></span>
-            <b-link>
-              <span>Check-In</span>
-              <right-icon />
-            </b-link>
-          </b-nav-text>
-          <b-nav-text>
-            <span data-icon-type="help_outline" class="icon"></span>
-            <b-link>
-              <span>Blog</span>
-              <right-icon />
-            </b-link>
-          </b-nav-text>
-          <b-nav-text>
-            <span data-icon-type="mail_outline" class="icon"></span>
-            <b-link>
-              <span>İletişim</span>
-              <right-icon />
-            </b-link>
-          </b-nav-text>
-        </b-nav>
-        <b-nav class="ml-auto responsive-menu">
-          <b-nav-text>
-            <span data-icon-type="login" class="icon"></span>
-            <b-link @click="$bvModal.show('loginModal')">
-              <span>Giriş Yap</span>
-              <right-icon />
-            </b-link>
-          </b-nav-text>
-          <b-nav-text>
-            <span data-icon-type="perm_identity" class="icon"></span>
-            <b-link @click="$bvModal.show('SingUpModal')">
-              <span>Üye Ol</span>
-              <right-icon />
-            </b-link>
-          </b-nav-text>
-        </b-nav>
-      </div>
-    </b-container>
+    <div class="container-fluid">
+      <b-container>
+        <div class="d-block d-lg-flex d-md-flex aling-items-center menu-list">
+          <b-nav class="responsive-menu">
+            <b-nav-text>
+              <span data-icon-type="flight" class="icon"></span>
+              <b-link>
+                <span>Uçak Bileti</span>
+                <right-icon />
+              </b-link>
+            </b-nav-text>
+            <b-nav-text>
+              <span data-icon-type="flight_takeoff" class="icon"></span>
+              <b-link>
+                <span>Yurtiçi</span>
+                <right-icon />
+              </b-link>
+            </b-nav-text>
+            <b-nav-text>
+              <span data-icon-type="language" class="icon"></span>
+              <b-link>
+                <span>Yurtdışı</span>
+                <right-icon />
+              </b-link>
+            </b-nav-text>
+            <b-nav-text>
+              <span data-icon-type="check" class="icon"></span>
+              <b-link>
+                <span>Check-In</span>
+                <right-icon />
+              </b-link>
+            </b-nav-text>
+            <b-nav-text>
+              <span data-icon-type="help_outline" class="icon"></span>
+              <b-link>
+                <span>Blog</span>
+                <right-icon />
+              </b-link>
+            </b-nav-text>
+            <b-nav-text>
+              <span data-icon-type="mail_outline" class="icon"></span>
+              <b-link>
+                <span>İletişim</span>
+                <right-icon />
+              </b-link>
+            </b-nav-text>
+          </b-nav>
+          <b-nav class="ml-auto responsive-menu">
+            <b-nav-text>
+              <span data-icon-type="login" class="icon"></span>
+              <b-link @click="$bvModal.show('loginModal')">
+                <span>Giriş Yap</span>
+                <right-icon />
+              </b-link>
+            </b-nav-text>
+            <b-nav-text>
+              <span data-icon-type="perm_identity" class="icon"></span>
+              <b-link @click="$bvModal.show('SingUpModal')">
+                <span>Üye Ol</span>
+                <right-icon />
+              </b-link>
+            </b-nav-text>
+          </b-nav>
+        </div>
+      </b-container>
+    </div>
   </div>
 </template>
 
